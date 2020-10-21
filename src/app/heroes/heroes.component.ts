@@ -16,13 +16,13 @@ so you can import it elsewhere */
 export class HeroesComponent implements OnInit {
   // all variables here are accessible from template
   heroes = HEROES;
-
-  hero:Hero = {
-  id: 1,
-  name: 'Windstorm',
-  };
+  selectedHero: Hero;
 
   constructor() { }
+
+  onSelect(hero: Hero) {
+    this.selectedHero = hero;
+  }
 
   /*The ngOnInit() is a lifecycle hook.
   Angular calls ngOnInit() shortly after
