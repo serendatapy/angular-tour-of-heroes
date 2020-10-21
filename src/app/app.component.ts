@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-tour-of-heroes';
+  /*Any values in here could be interpolated
+  into app component, and be rendered immediately!*/
+  title = 'Tour of Heroes';
 }
